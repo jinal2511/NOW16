@@ -1,0 +1,157 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+.main-container {
+  height: 900px;
+  max-width: 1512px;
+  left: 0px;
+  top: 0px;
+  border-radius: 0px;
+}
+.container {
+  max-width: 1512px;
+  margin: 0 auto;
+}
+.logoimg {
+  width: 100px;
+  height: 38.16px;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  margin: 20px 0 0 65px;
+}
+.headers {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 20px 20px;
+  margin-top: 10px;
+}
+.girlfont{
+  font-family: "Bebas Neue";
+  padding: 0 7px ;
+}
+.boyfont{
+  font-family: "Bebas Neue";
+  padding: 0 7px ;
+}
+.everyfont{
+  font-family: "Bebas Neue";
+  padding: 0 7px ;
+}
+.accefont{
+  font-family: "Bebas Neue";
+  padding: 0 7px ;
+}
+.searchlogo {
+  padding: 0 7px ;
+  height: 17px;
+  width: 17px;
+  left: 2px;
+  top: 2px;
+  border-radius: 0px;
+}
+.cartlogo {
+  padding: 0 7px ;
+  height: 17px;
+  width: 22px;
+  left: 1px;
+  top: 1px;
+}
+.userlogo {
+  padding: 0 7px ;
+  width: 18px;
+  left: 3px;
+  top: 2px;
+  border-radius: 0px;
+  height: 16px;
+}
+.trylogo {
+  padding: 0 7px ;
+  margin-top: -6px;
+  margin-left: -24px;
+  height: 28px;
+  width: 100px;
+}
+
+@media only screen and (min-width: 768px) {
+  .hamburger{
+    display: none;
+  }
+  .mobileview {
+    display: none;
+  }
+} 
+@media only screen and (max-width: 767px) {
+
+  .girlfont{
+    display: none;
+  }
+  .boyfont{
+    display: none;
+  }
+  .everyfont{
+    display: none;
+  }
+  .accefont{
+    display: none;
+  }
+  .trylogo{
+    display: none;
+  }
+
+  .hamburger{
+    height: 15.5px;
+    width: 15.75px;
+    left: 4.125px;
+    top: 6.375px;
+    border-radius: 0px;
+    margin-left: 2.5px;
+    margin-top: 5.5px;
+    }
+    .logoimg {
+      margin: 30px 0 0 45px; 
+      /* margin: 20px 0 0 65px; */
+    }
+    .searchlogo {
+      padding: 0 7px ;
+      height: 17px;
+      width: 17px;
+      left: 2px;
+      top: 2px;
+      border-radius: 0px;
+      margin-top: 10px;
+     
+    }
+    .cartlogo {
+      padding: 0 7px ;
+      height: 17px;
+      width: 22px;
+      left: 1px;
+      top: 1px;
+      margin-top: 10px;
+    }
+    .userlogo {
+      padding: 0 7px ;
+      width: 18px;
+      left: 3px;
+      top: 2px;
+      border-radius: 0px;
+      height: 16px;
+      margin-top: 10px;
+    }
+    .mobileview a {
+      display: block;
+      text-align: end;
+  }
+}
+
