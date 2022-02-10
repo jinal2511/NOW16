@@ -20,7 +20,7 @@ export default function Home() {
               <a className="everyfont">EVERYONE</a>
             </Link>
             <Link href="/Accessories">
-              <a className="accefont">ACCESSORIES jinl  </a>
+              <a className="accefont">ACCESSORIES jinl s </a>
             </Link>
           </div>
         </div>
