@@ -133,12 +133,13 @@ a {
       flex-direction: column;
       align-items: center;
      margin-top: 10px;
-      background-color: antiquewhite;
-    
+      background-color: black;
+      
       padding: 10px 10px 10px 10px;
     }
     .menuview a {
       padding: 0px 0px 10px 0px;
+      color: white;
   }
   .searchlogo {
     margin-top: 10px;
