@@ -35,7 +35,7 @@ a {
   align-items: center;
   padding: 20px 20px 20px 20px;
   margin-top: -60px;
- 
+  position: relative;
 }
 .girlfont {
   font-family: "Bebas Neue";
@@ -85,26 +85,43 @@ a {
   margin-top: -10px;
   padding: 0 45px 0 5px;
 }
+.bannerImg {
+  height: 590px;
+  width: 446px;
 
+  /* height: 544px;
+  width: 446px; */
+  left: 0px;
+  top: 0px;
+  border-radius: 0px;
+  position: absolute;
+  left: 36%;
+  top: 87px;
+}
+
+@media only screen and (max-width: 1199px) {
+  .bannerImg {
+    height: 494px;
+    width: 530px;
+    position: absolute;
+    left: 26%;
+    top: 16%;
+  }
+}
 @media only screen and (max-width: 992px) {
-  
   .girlfont {
-    
     padding: 0 10px;
     font-size: 16px;
   }
   .boyfont {
-    
     padding: 0 10px;
     font-size: 16px;
   }
   .everyfont {
-    
     padding: 0 10px;
     font-size: 16px;
   }
   .accefont {
-    
     padding: 0 10px;
     font-size: 16px;
   }
@@ -133,8 +150,15 @@ a {
     width: 80px;
     border-radius: 36px;
     margin-top: 0px;
-    padding: 0 10px 0 5px;
-}
+    padding: 0 45px 0 5px;
+  }
+  .bannerImg {
+    height: 494px;
+    width: 374px;
+    position: absolute;
+    left: 43%;
+    top: 16%;
+  }
 }
 
 @media only screen and (min-width: 76px) {
@@ -161,14 +185,14 @@ a {
   .trylogo {
     display: none;
   }
-  
+
   .searchlogo {
-    height:24px;
+    height: 24px;
     width: 24px;
     border-radius: 0px;
   }
   .cartlogo {
-    height: 25px;   
+    height: 25px;
     width: 28px;
   }
   .userlogo {
@@ -179,43 +203,45 @@ a {
     display: flex;
     height: 25px;
     width: 25.75px;
-    padding: 0px 0px 4px 5px;
+    padding: 0px 50px 4px 5px;
   }
-  .close {  
-  height: 32px;
+  .close {
+    height: 32px;
     width: 30px;
     background-color: white;
   }
-  
-    .menuview {
-      display: flex;
-      flex-direction: column;
-      background-color: black;
-      padding: 10px 10px 10px 10px;
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 200px;
-      height: 615px;
+
+  .menuview {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 10px 10px 10px 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 615px;
   }
-  
+
   .menuview a {
     display: inline-block;
-    margin-top: 10px;   
+    margin-top: 10px;
     padding: 20px 0px 10px 0px;
     color: white;
     text-align: end;
   }
+
+  
 }
 
 @media only screen and (max-width: 567px) {
-  
+ 
   .logoimg {
     margin: 40px 0 0 30px;
   }
   .searchlogo {
-    height:19px;
-    width: 19px; 
+    height: 19px;
+    width: 19px;
   }
   .cartlogo {
     height: 22px;
@@ -229,12 +255,13 @@ a {
     display: flex;
     height: 16px;
     width: 18.75px;
+    padding: 0px 10px 4px 5px;
   }
-  .close {  
+  .close {
     height: 28px;
     width: 28px;
     background-color: white;
-    }
+  }
   .menuview {
     display: flex;
     flex-direction: column;
@@ -248,46 +275,48 @@ a {
   }
   .menuview a {
     display: inline-block;
-    margin-top: 10px;   
+    margin-top: 10px;
     padding: 20px 0px 10px 0px;
     color: white;
     text-align: end;
   }
+  .bannerImg {
+    height: 494px;
+    width: 374px;
+    position: absolute;
+    left: 43%;
+    top: 16%;
+  }
 }
 @media only screen and (max-width: 420px) {
-  
   .logoimg {
     margin: 40px 0 0 30px;
   }
   .searchlogo {
-    height:17px;
+    height: 17px;
     width: 17px;
-    
   }
   .cartlogo {
     height: 20px;
     padding: 5px 5px 5px 5px;
     width: 22px;
     margin-top: 0px;
-    
   }
   .userlogo {
     height: 17px;
     width: 15px;
-   
   }
   .hamburger {
     display: flex;
-   padding-left: 3px;
+    padding-left: 3px;
     height: 15px;
     width: 16.75px;
-  
   }
-  .close {  
+  .close {
     height: 25px;
     width: 25px;
     background-color: white;
-    }
+  }
   .menuview {
     display: flex;
     flex-direction: column;
@@ -301,7 +330,7 @@ a {
   }
   .menuview a {
     display: inline-block;
-    margin-top: 10px;   
+    margin-top: 10px;
     padding: 20px 0px 10px 0px;
     color: white;
     text-align: end;
