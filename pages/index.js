@@ -1,7 +1,12 @@
-import Header from "./header";
-import Link from "next/link";
+ import Header from "./header";
+ import Link from "next/link";
+import Mittal from "./new";
+import React, {useState} from "react";
 export default function Home() {
+
+  // const [main, setMain] = useState(false);
   return (
+
     <>
       <div>
         <div className="container">
@@ -9,7 +14,8 @@ export default function Home() {
             <img src="/logo.svg" />
           </div>
           <Header />
-          <div className="mobileview">
+   
+          {/* <div className="mobileview">
             <Link href="/Girls">
               <a className="girlfont">GIRLS</a>
             </Link>
@@ -20,11 +26,12 @@ export default function Home() {
               <a className="everyfont">EVERYONE</a>
             </Link>
             <Link href="/Accessories">
-              <a className="accefont">ACCESSORIES jinl s </a>
+              <a className="accefont">ACCESSORIES </a>
             </Link>
-          </div>
+          </div> */}
         </div>
+        
       </div>
     </>
-  );
+ );
 }
