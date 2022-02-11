@@ -87,6 +87,9 @@ a {
 }
 
 @media only screen and (max-width: 992px) {
+  .logoimg{
+    margin: 40px 0 0 30px;
+  }
   .girlfont {
     
     padding: 0 10px;
@@ -162,9 +165,7 @@ a {
   .trylogo {
     display: none;
   }
-  .logoimg {
-    margin: 30px 0 0 75px;
-  }
+  
   .searchlogo {
     height:24px;
     width: 24px;
@@ -214,7 +215,7 @@ a {
 @media only screen and (max-width: 567px) {
   
   .logoimg {
-    margin: 40px 0 0 35px;
+    margin: 40px 0 0 30px;
   }
   .searchlogo {
     height:19px;
@@ -263,7 +264,6 @@ a {
     margin: 40px 0 0 30px;
   }
   .searchlogo {
-   
     height:17px;
     width: 17px;
     
