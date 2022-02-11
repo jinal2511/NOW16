@@ -32,22 +32,24 @@ a {
 .headers {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   padding: 20px 20px 20px 20px;
-  margin-top: -55px;
+  margin-top: -60px;
+ 
 }
 .girlfont {
   font-family: "Bebas Neue";
-  padding: 0 15px;
+  padding: 10px 15px 10px 10px;
   font-size: 16px;
 }
 .boyfont {
   font-family: "Bebas Neue";
-  padding: 0 15px;
+  padding: 10px 15px 10px 10px;
   font-size: 16px;
 }
 .everyfont {
   font-family: "Bebas Neue";
-  padding: 0 15px;
+  padding: 10px 15px 10px 10px;
   font-size: 16px;
 }
 .accefont {
@@ -109,14 +111,14 @@ a {
     padding: 0 7px 0 10px;
     height: 19px;
     width: 19px;
-    margin-top: -10px;
+    margin-top: 0px;
     border-radius: 0px;
   }
   .cartlogo {
     height: 24px;
     padding: 0 7px 0 10px;
     width: 24px;
-    margin-top: -2px;
+    margin-top: 3px;
     border-radius: 0px;
   }
   .userlogo {
@@ -124,14 +126,13 @@ a {
     height: 19px;
     width: 18px;
     border-radius: 0px;
-    margin-top: -2px;
+    margin-top: 0px;
   }
   .trylogo {
     width: 80px;
     border-radius: 36px;
-    margin-top: -10px;
-    
-    padding: 0 10px 0 0px;
+    margin-top: 0px;
+    padding: 0 10px 0 5px;
 }
 }
 
@@ -162,36 +163,26 @@ a {
     display: none;
   }
   .logoimg {
-    margin: 40px 0 0 25px;
+    margin: 30px 0 0 75px;
   }
   .searchlogo {
-    padding: 3px 15px 0px 6px;
     height:24px;
     width: 24px;
-    margin-top: -4px;
     border-radius: 0px;
   }
   .cartlogo {
-    height: 25px;
-    padding: 3px 15px 0 6px;
+    height: 25px;   
     width: 28px;
-    margin-top: -4px;
-    border-radius: 0px;
   }
   .userlogo {
-    padding: 3px 10px;
     height: 25px;
     width: 20px;
-    border-radius: 0px;
-    margin-top: -5px;
   }
   .hamburger {
     display: flex;
-    padding: 1px 20px 0 5px;
     height: 25px;
     width: 25.75px;
-    margin-left: 2px;
-    margin-top: -2px; 
+    padding: 0px 0px 4px 5px;
   }
   .close {  
   height: 32px;
@@ -226,33 +217,21 @@ a {
     margin: 40px 0 0 35px;
   }
   .searchlogo {
-    padding: 0 4px;
     height:19px;
-    width: 19px;
-    margin-top: -1px;
-    border-radius: 0px;
+    width: 19px; 
   }
   .cartlogo {
     height: 22px;
-    padding: 0 7px;
     width: 24px;
-    margin-top: -1px;
-    border-radius: 0px;
   }
   .userlogo {
-    padding: 0 6px;
     height: 20px;
     width: 17px;
-    border-radius: 0px;
-    margin-top: -20px;
   }
   .hamburger {
     display: flex;
-    padding: 0 12px 0 3px;
     height: 16px;
     width: 18.75px;
-    margin-left: 2px;
-    margin-top: 0px; 
   }
   .close {  
     height: 28px;
@@ -284,33 +263,29 @@ a {
     margin: 40px 0 0 30px;
   }
   .searchlogo {
-    padding: 1px 6px;
+   
     height:17px;
     width: 17px;
-    margin-top: -1px;
-    border-radius: 0px;
+    
   }
   .cartlogo {
     height: 20px;
-    padding: 1px 6px;
+    padding: 5px 5px 5px 5px;
     width: 22px;
     margin-top: 0px;
-    border-radius: 0px;
+    
   }
   .userlogo {
-    padding: 1px 5px;
     height: 17px;
     width: 15px;
-    border-radius: 0px;
-    margin-top:-6px;
+   
   }
   .hamburger {
     display: flex;
-    padding: 0px 3px 0 3px;
+   padding-left: 3px;
     height: 15px;
     width: 16.75px;
-    margin-left: 2px;
-    margin-top: 0.5px; 
+  
   }
   .close {  
     height: 25px;
