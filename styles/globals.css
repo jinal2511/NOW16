@@ -28,32 +28,33 @@ a {
   right: 0%;
   top: 0%;
   bottom: 0%;
-  margin: 20px 0 0 65px;
+  margin: 30px 0 0 75px;
 }
+
 .headers {
   display: flex;
   justify-content: flex-end;
-  padding: 20px 20px 20px;
-  margin-top: 10px;
+  padding: 20px 20px 20px 20px;
+  margin-top: 25px;
 }
-.girlfont{
+.girlfont {
   font-family: "Bebas Neue";
-  padding: 0 7px ;
+  padding: 0 5px;
 }
-.boyfont{
+.boyfont {
   font-family: "Bebas Neue";
-  padding: 0 7px ;
+  padding: 0 5px;
 }
-.everyfont{
+.everyfont {
   font-family: "Bebas Neue";
-  padding: 0 7px ;
+  padding: 0 5px;
 }
-.accefont{
+.accefont {
   font-family: "Bebas Neue";
-  padding: 0 7px ;
+  padding: 0 5px;
 }
 .searchlogo {
-  padding: 0 7px ;
+  padding: 0 5px;
   height: 17px;
   width: 17px;
   left: 2px;
@@ -61,14 +62,14 @@ a {
   border-radius: 0px;
 }
 .cartlogo {
-  padding: 0 7px ;
+  padding: 0 5px;
   height: 17px;
   width: 22px;
   left: 1px;
   top: 1px;
 }
 .userlogo {
-  padding: 0 7px ;
+  padding: 0 5px;
   width: 18px;
   left: 3px;
   top: 2px;
@@ -76,79 +77,76 @@ a {
   height: 16px;
 }
 .trylogo {
-  padding: 0 7px ;
+  padding: 0 5px;
   margin-top: -6px;
   margin-left: -24px;
   height: 28px;
   width: 100px;
 }
 
-
-@media only screen and (min-width: 767px) {
-  .hamburger{
+@media only screen and (min-width: 700px) {
+  .hamburger {
     display: none;
   }
   .menuview {
     display: none;
   }
-} 
-@media only screen and (max-width: 767px) {
+}
+@media only screen and (max-width: 699px) {
+  .girlfont {
+    display: none;
+  }
+  .boyfont {
+    display: none;
+  }
+  .everyfont {
+    display: none;
+  }
+  .accefont {
+    display: none;
+  }
+  .trylogo {
+    display: none;
+  }
 
-  .girlfont{
-    display: none;
-  }
-  .boyfont{
-    display: none;
-  }
-  .everyfont{
-    display: none;
-  }
-  .accefont{
-    display: none;
-  }
-  .trylogo{
-    display: none;
+  .logoimg {
+    margin: 40px 0 0 25px;
   }
 
-  .hamburger{
+  .searchlogo {
+    margin-top: 10px;
+  }
+  .cartlogo {
+    margin-top: 10px;
+  }
+  .userlogo {
+    margin-top: 10px;
+  }
+  .hamburger {
     display: flex;
     height: 16px;
     width: 15.75px;
     margin-left: 2px;
-    margin-top: 5.0px;
-    }
-    .close{
-      display: flex;
-      height: 20px;
-      width: 30px;
-      margin-left: 1px;
-      margin-top: 3.0px;
-    }
-    .logoimg {
-      margin: 30px 0 0 45px; 
-      /* margin: 20px 0 0 65px; */
-    }
-    .menuview {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-     margin-top: 10px;
-      background-color: black;
-      
-      padding: 10px 10px 10px 10px;
-    }
-    .menuview a {
-      padding: 0px 0px 10px 0px;
-      color: white;
+    margin-top: 5px;
   }
-  .searchlogo {
-    margin-top: 10px;
+  .close {
+    display: flex;
+    height: 20px;
+    width: 30px;
+    margin-left: 1px;
+    margin-top: 3px;
   }
-  .cartlogo{
+  .menuview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 10px;
+    background-color: black;
+
+    padding: 10px 10px 10px 10px;
   }
-  .userlogo{
-    margin-top: 10px;
+  .menuview a {
+    padding: 0px 0px 10px 0px;
+    color: white;
   }
 }
-
