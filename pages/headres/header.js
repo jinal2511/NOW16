@@ -1,12 +1,16 @@
 import Link from "next/link";
 import { useState } from "react";
 
+
 export default function Header() {
   const [main, setMain] = useState(false);
+
   return (
     <>
+    
       <div className="headers">
-        <Link href="/Girls">
+        
+        <Link href="./Girls">
           <a className="girlfont">GIRLS</a>
         </Link>
         <Link href="/Boys">
@@ -38,17 +42,19 @@ export default function Header() {
             <img src="/try.svg" className="trylogo" />
           </a>
         </Link>
-        <a onClick={() => setMain(!main)} className="hamburger">
+
+        <a onClick={() => setMain(!main)} className="hamburger">   
           {!main ? (
             <img src="/hamburger.svg" className="hamburger" />
           ) : (
-            <img src="/close.svg" className="close" />
+           <a> </a>
+            
           )}
-        </a>
+     </a>
         </div>
-       
         {main ? (
           <div className="menuview">
+            <div onClick={()=>setMain(false)}><img src="/close.svg" className="close"/></div>
             <Link href="/">
               <a>GIRLS</a>
             </Link>

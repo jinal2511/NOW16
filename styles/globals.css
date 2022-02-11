@@ -21,70 +21,123 @@ a {
   margin: 0 auto;
 }
 .logoimg {
-  width: 100px;
-  height: 38.16px;
-  position: absolute;
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 0%;
-  margin: 30px 0 0 75px;
+  height: 45.95744323730469px;
+  width: 120px;
+  left: 0px;
+  top: 0px;
+  border-radius: 0px;
+  margin: 20px 0 0 75px;
 }
 
 .headers {
   display: flex;
   justify-content: flex-end;
   padding: 20px 20px 20px 20px;
-  margin-top: 25px;
+  margin-top: -55px;
 }
 .girlfont {
   font-family: "Bebas Neue";
-  padding: 0 5px;
+  padding: 0 15px;
+  font-size: 16px;
 }
 .boyfont {
   font-family: "Bebas Neue";
-  padding: 0 5px;
+  padding: 0 15px;
+  font-size: 16px;
 }
 .everyfont {
   font-family: "Bebas Neue";
-  padding: 0 5px;
+  padding: 0 15px;
+  font-size: 16px;
 }
 .accefont {
   font-family: "Bebas Neue";
-  padding: 0 5px;
+  padding: 0 15px;
 }
 .searchlogo {
-  padding: 0 5px;
-  height: 17px;
-  width: 17px;
-  left: 2px;
-  top: 2px;
+  padding: 0 7px 0 15px;
+  height: 19px;
+  width: 19px;
+  margin-top: -10px;
   border-radius: 0px;
 }
 .cartlogo {
-  padding: 0 5px;
-  height: 17px;
-  width: 22px;
-  left: 1px;
-  top: 1px;
+  height: 24px;
+  padding: 0 7px 0 15px;
+  width: 24px;
+  margin-top: -2px;
+  border-radius: 0px;
 }
 .userlogo {
-  padding: 0 5px;
+  padding: 0 15px;
+  height: 19px;
   width: 18px;
-  left: 3px;
-  top: 2px;
   border-radius: 0px;
-  height: 16px;
+  margin-top: -2px;
 }
 .trylogo {
-  padding: 0 5px;
-  margin-top: -6px;
-  margin-left: -24px;
-  height: 28px;
-  width: 100px;
+  width: 95px;
+  left: 0px;
+  top: 6px;
+  border-radius: 36px;
+  margin-top: -10px;
+  padding: 0 45px 0 5px;
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (max-width: 992px) {
+  .girlfont {
+    
+    padding: 0 10px;
+    font-size: 16px;
+  }
+  .boyfont {
+    
+    padding: 0 10px;
+    font-size: 16px;
+  }
+  .everyfont {
+    
+    padding: 0 10px;
+    font-size: 16px;
+  }
+  .accefont {
+    
+    padding: 0 10px;
+    font-size: 16px;
+  }
+  .searchlogo {
+    padding: 0 7px 0 10px;
+    height: 19px;
+    width: 19px;
+    margin-top: -10px;
+    border-radius: 0px;
+  }
+  .cartlogo {
+    height: 24px;
+    padding: 0 7px 0 10px;
+    width: 24px;
+    margin-top: -2px;
+    border-radius: 0px;
+  }
+  .userlogo {
+    padding: 0 10px;
+    height: 19px;
+    width: 18px;
+    border-radius: 0px;
+    margin-top: -2px;
+  }
+  .trylogo {
+    width: 80px;
+    border-radius: 36px;
+    margin-top: -10px;
+    
+    padding: 0 10px 0 0px;
+}
+}
+
+
+/* ============================================================= */
+@media only screen and (min-width: 76px) {
   .hamburger {
     display: none;
   }
@@ -92,7 +145,7 @@ a {
     display: none;
   }
 }
-@media only screen and (max-width: 699px) {
+@media only screen and (max-width: 767px) {
   .girlfont {
     display: none;
   }
@@ -108,45 +161,178 @@ a {
   .trylogo {
     display: none;
   }
-
   .logoimg {
     margin: 40px 0 0 25px;
   }
-
   .searchlogo {
-    margin-top: 10px;
+    padding: 3px 15px 0px 6px;
+    height:24px;
+    width: 24px;
+    margin-top: -4px;
+    border-radius: 0px;
   }
   .cartlogo {
-    margin-top: 10px;
+    height: 25px;
+    padding: 3px 15px 0 6px;
+    width: 28px;
+    margin-top: -4px;
+    border-radius: 0px;
   }
   .userlogo {
-    margin-top: 10px;
+    padding: 3px 10px;
+    height: 25px;
+    width: 20px;
+    border-radius: 0px;
+    margin-top: -5px;
   }
   .hamburger {
     display: flex;
-    height: 16px;
-    width: 15.75px;
+    padding: 1px 20px 0 5px;
+    height: 25px;
+    width: 25.75px;
     margin-left: 2px;
-    margin-top: 5px;
+    margin-top: -2px; 
   }
-  .close {
-    display: flex;
-    height: 20px;
+  .close {  
+  height: 32px;
     width: 30px;
-    margin-left: 1px;
-    margin-top: 3px;
+    background-color: white;
   }
+  
+    .menuview {
+      display: flex;
+      flex-direction: column;
+      background-color: black;
+      padding: 10px 10px 10px 10px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 200px;
+      height: 615px;
+  }
+  
+  .menuview a {
+    display: inline-block;
+    margin-top: 10px;   
+    padding: 20px 0px 10px 0px;
+    color: white;
+    text-align: end;
+  }
+}
+
+@media only screen and (max-width: 567px) {
+  
+  .logoimg {
+    margin: 40px 0 0 35px;
+  }
+  .searchlogo {
+    padding: 0 4px;
+    height:19px;
+    width: 19px;
+    margin-top: -1px;
+    border-radius: 0px;
+  }
+  .cartlogo {
+    height: 22px;
+    padding: 0 7px;
+    width: 24px;
+    margin-top: -1px;
+    border-radius: 0px;
+  }
+  .userlogo {
+    padding: 0 6px;
+    height: 20px;
+    width: 17px;
+    border-radius: 0px;
+    margin-top: -20px;
+  }
+  .hamburger {
+    display: flex;
+    padding: 0 12px 0 3px;
+    height: 16px;
+    width: 18.75px;
+    margin-left: 2px;
+    margin-top: 0px; 
+  }
+  .close {  
+    height: 28px;
+    width: 28px;
+    background-color: white;
+    }
   .menuview {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-top: 10px;
     background-color: black;
-
     padding: 10px 10px 10px 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 170px;
+    height: 615px;
   }
   .menuview a {
-    padding: 0px 0px 10px 0px;
+    display: inline-block;
+    margin-top: 10px;   
+    padding: 20px 0px 10px 0px;
     color: white;
+    text-align: end;
+  }
+}
+@media only screen and (max-width: 420px) {
+  
+  .logoimg {
+    margin: 40px 0 0 30px;
+  }
+  .searchlogo {
+    padding: 1px 6px;
+    height:17px;
+    width: 17px;
+    margin-top: -1px;
+    border-radius: 0px;
+  }
+  .cartlogo {
+    height: 20px;
+    padding: 1px 6px;
+    width: 22px;
+    margin-top: 0px;
+    border-radius: 0px;
+  }
+  .userlogo {
+    padding: 1px 5px;
+    height: 17px;
+    width: 15px;
+    border-radius: 0px;
+    margin-top:-6px;
+  }
+  .hamburger {
+    display: flex;
+    padding: 0px 3px 0 3px;
+    height: 15px;
+    width: 16.75px;
+    margin-left: 2px;
+    margin-top: 0.5px; 
+  }
+  .close {  
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    }
+  .menuview {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 10px 10px 10px 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 150px;
+    height: 615px;
+  }
+  .menuview a {
+    display: inline-block;
+    margin-top: 10px;   
+    padding: 20px 0px 10px 0px;
+    color: white;
+    text-align: end;
   }
 }
