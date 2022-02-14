@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import Header from "./headres/header";
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
+import Headermain from "./headres/HeaderMain";
 
 export default function Home() {
   return (
   
       <div>
         <div className="container">
-          <div className="logoimg">
+          {/* <div className="logoimg">
             <img src="/logo.svg" />
           </div>
           <Header />
@@ -14,7 +16,8 @@ export default function Home() {
         <div>
           <div>
             <img src="/bannerImg.svg" className="bannerImg"/>
-          </div>
+          </div> */}
+          <Headermain />
           </div>
       </div>
    

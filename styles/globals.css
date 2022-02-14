@@ -7,7 +7,7 @@ body {
 }
 a {
   color: black;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 .main-container {
   height: 900px;
@@ -20,44 +20,38 @@ a {
   max-width: 1512px;
   margin: 0 auto;
 }
-.logoimg {
-  height: 45.95744323730469px;
-  width: 120px;
-  left: 0px;
-  top: 0px;
-  border-radius: 0px;
-  margin: 20px 0 0 75px;
-}
 
-.headers {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 20px 20px 20px 20px;
-  margin-top: -60px;
-  position: relative;
+.header_section {
+  padding: 30px 0;
 }
-.girlfont {
-  font-family: "Bebas Neue";
-  padding: 10px 15px 10px 10px;
-  font-size: 16px;
+.col-xl-4.logo {
+  padding: 10px;
+  width: 40%;
 }
-.boyfont {
-  font-family: "Bebas Neue";
-  padding: 10px 15px 10px 10px;
-  font-size: 16px;
+.col-xl-8.nav {
+  justify-content: end;
+  width: 60%;
 }
-.everyfont {
-  font-family: "Bebas Neue";
-  padding: 10px 15px 10px 10px;
-  font-size: 16px;
+.img-responsive {
+  box-sizing: unset !important;
 }
+nav.navbar a {
+  display: inline-block;
+  color: black;
+  padding: 0 8px;
+}
+.girlfont,
+.boyfont,
+.everyfont,
 .accefont {
   font-family: "Bebas Neue";
-  padding: 0 15px;
+  font-size: 16px;
+}
+
+.img-responsive {
+  box-sizing: unset !important;
 }
 .searchlogo {
-  padding: 0 7px 0 15px;
   height: 19px;
   width: 19px;
   margin-top: -10px;
@@ -65,47 +59,263 @@ a {
 }
 .cartlogo {
   height: 24px;
-  padding: 0 7px 0 15px;
   width: 24px;
-  margin-top: -2px;
+  margin-top: -8px;
   border-radius: 0px;
 }
 .userlogo {
-  padding: 0 15px;
   height: 19px;
   width: 18px;
   border-radius: 0px;
-  margin-top: -2px;
+  margin-top: -10px;
 }
 .trylogo {
   width: 95px;
   left: 0px;
   top: 6px;
   border-radius: 36px;
+  margin-top: -3px;
+}
+img.hamburger {
+  display: none;
+}
+.menuview{
+  display: none;
+}
+
+@media only screen and (max-width: 992px) {
+
+  .girlfont,
+  .boyfont,
+  .everyfont,
+  .accefont {
+    font-family: "Bebas Neue";
+    font-size: 16px;
+  }
+  nav.navbar a {
+    display: block;
+    padding: 0 6px;
+}
+.searchlogo {
+  height: 19px;
+  width: 19px;
   margin-top: -10px;
-  padding: 0 45px 0 5px;
-}
-.bannerImg {
-  height: 590px;
-  width: 446px;
-
-  /* height: 544px;
-  width: 446px; */
-  left: 0px;
-  top: 0px;
   border-radius: 0px;
-  position: absolute;
-  left: 36%;
-  top: 87px;
+}
+.cartlogo {
+  height: 24px;
+  width: 24px;
+  margin-top: -8px;
+  border-radius: 0px;
+}
+.userlogo {
+  height: 19px;
+  width: 18px;
+  border-radius: 0px;
+  margin-top: -10px;
+}
+.trylogo {
+  width: 80px;
+  left: 0px;
+  top: 6px;
+  border-radius: 36px;
+  margin-top: -3px;
+}
+  img.hamburger {
+    display: none;
+  }
+  .menuview{
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .girlfont,
+  .boyfont,
+  .everyfont,
+  .accefont,
+  .trylogo {
+  display: none !important;
+  }
+.searchlogo {
+  padding: 0 10px;
+    height: 25px;
+    width: 25px;
+    margin-top: 0px;
+    border-radius: 0px;
+}
+.cartlogo {
+  padding: 0 10px;
+  height: 32px;
+  width: 26px;
+  margin-top: 3px;
+  border-radius: 0px;
+}
+.userlogo {
+  padding: 0 10px;
+  height: 36px;
+  width: 22px;
+  border-radius: 0px;
+  margin-top: 0px;
+}
+img.hamburger {
+  display: flex;
+  height: 25px;
+  width: 25.75px;
+  margin: 16px 8px;
+}
+  .close {
+    height: 32px;
+    width: 30px;
+    background-color: white;
+  }
+
+  .menuview {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 10px 10px 10px 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 400px !important;
+    height: 660px;
+  }
+
+  .menuview a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 20px 0px 10px 0px;
+    color: white;
+    text-align: end;
+  }
+
+}
+@media only screen and (max-width: 567px) {
+
+
+  .searchlogo {
+    padding: 0 10px;
+      height: 25px;
+      width: 25px;
+      margin-top: 0px;
+      border-radius: 0px;
+  }
+  .cartlogo {
+    padding: 0 10px;
+    height: 32px;
+    width: 26px;
+    margin-top: 3px;
+    border-radius: 0px;
+  }
+  .userlogo {
+    padding: 0 10px;
+    height: 36px;
+    width: 22px;
+    border-radius: 0px;
+    margin-top: 0px;
+  }
+  img.hamburger {
+    display: flex;
+    height: 25px;
+    width: 25.75px;
+    margin: 16px 8px;
+  }
+    .close {
+      height: 32px;
+      width: 30px;
+      background-color: white;
+    }
+  
+    .menuview {
+      display: flex;
+      flex-direction: column;
+      background-color: black;
+      padding: 10px 10px 10px 10px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 300px !important;
+      height: 660px;
+    }
+  
+    .menuview a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 20px 0px 10px 0px;
+      color: white;
+      text-align: end;
+    }
+  
+
+}
+@media only screen and (max-width: 420px) {
+
+
+  .searchlogo {
+    padding: 0 0px;
+      height: 19px;
+      width: 19px;
+      margin-top: 0px;
+      border-radius: 0px;
+  }
+  .cartlogo {
+    padding: 0 0px;
+    height: 21px;
+    width: 22px;
+    margin-top: 6px;
+    border-radius: 0px;
+  }
+  .userlogo {
+    padding: 0 0px;
+    height: 17px;
+    width: 17px;
+    border-radius: 0px;
+    margin-top: 0px;
+  }
+  img.hamburger {
+    display: flex;
+    height: 16px;
+    width: 19.75px;
+    margin: 24px 0px 0 0;
+}
+    .close {
+      height: 32px;
+      width: 30px;
+      background-color: white;
+    }
+  
+    .menuview {
+      display: flex;
+      flex-direction: column;
+      background-color: black;
+      padding: 10px 10px 10px 10px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 175px !important;
+      height: 660px;
+    }
+  
+    .menuview a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 20px 0px 10px 0px;
+      color: white;
+      text-align: end;
+    }
+  
+
 }
 
-@media only screen and (max-width: 1199px) {
-  .bannerImg {
-    height: 494px;
-    width: 530px;
-    position: absolute;
-    left: 26%;
-    top: 16%;
+/* @media only screen and (max-width: 1199px) {
+  .logoimg {
+   
+    margin: 20px 0 0 5px
+  }  
+  .headers {
+    
+    margin-top: -60px;
+   
   }
 }
 @media only screen and (max-width: 992px) {
@@ -335,4 +545,4 @@ a {
     color: white;
     text-align: end;
   }
-}
+} */
