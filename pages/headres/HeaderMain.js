@@ -4,7 +4,7 @@ const Headermain = () => {
   const [main, setMain] = useState(false);
   return (
     <div className="header_section">
-      <div className="container">
+      <div className="header_container">
         <div className="row">
           <div className="col-xl-4 col-lg-4 col-md-4 col-sm-4 logo">
             <Link href="/">
@@ -15,19 +15,19 @@ const Headermain = () => {
           </div>
           <div className="col-xl-8 col-lg-8 col-md-8 col-sm-8 nav">
             <nav className="navbar">
-              <Link href="./Girls">
+              <Link href="../headres/Girls">
                 <a className="girlfont ">GIRLS</a>
               </Link>
-              <Link href="/Boys">
+              <Link href="../headres/Boys">
                 <a className="boyfont">BOYS</a>
               </Link>
-              <Link href="/Everyone">
+              <Link href="../headres/Everyone">
                 <a className="everyfont">EVERYONE</a>
               </Link>
-              <Link href="/Accessories">
+              <Link href="../headres/Accessories">
                 <a className="accefont">ACCESSORIES</a>
               </Link>
-              <Link href="/Search">
+              <Link href="../headres/Search">
                 <a>
                   <img
                     src="/search.svg"
@@ -35,17 +35,17 @@ const Headermain = () => {
                   />
                 </a>
               </Link>
-              <Link href="/Cart">
+              <Link href="../headres/Cart">
                 <a>
                   <img src="/cart.svg" className="cartlogo img-responsive" />
                 </a>
               </Link>
-              <Link href="/User">
+              <Link href="../headres/User">
                 <a>
                   <img src="/user.svg" className="userlogo img-responsive" />
                 </a>
               </Link>
-              <Link href="/Try">
+              <Link href="../headres/Try">
                 <a>
                   <img src="/try.svg" className="trylogo img-responsive" />
                 </a>

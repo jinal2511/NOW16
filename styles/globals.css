@@ -6,7 +6,7 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 a {
-  color: black;
+  color: black !important;
   text-decoration: none !important;
 }
 .main-container {
@@ -16,29 +16,45 @@ a {
   top: 0px;
   border-radius: 0px;
 }
-.container {
+ul,
+li {
+  list-style-type: none;
+  margin: 0px !important;
+  padding: 0px !important;
+}
+.header_container {
   max-width: 1512px;
   margin: 0 auto;
 }
 
 .header_section {
-  padding: 30px 0;
+  padding: 30px 0px;
+  /* background-color: silver; */
 }
+
 .col-xl-4.logo {
-  padding: 10px;
+  padding-top: 10px;
   width: 40%;
 }
 .col-xl-8.nav {
+  flex: 1 1;
+  display: flex;
   justify-content: end;
-  width: 60%;
+  padding: 0 !important;
 }
 .img-responsive {
   box-sizing: unset !important;
 }
+nav.navbar {
+  display: flex;
+  flex: 1;
+}
 nav.navbar a {
-  display: inline-block;
+  display: block;
   color: black;
-  padding: 0 8px;
+  padding: 0 8px 0 0;
+  justify-content: end;
+  margin-right: 0px;
 }
 .girlfont,
 .boyfont,
@@ -79,12 +95,116 @@ nav.navbar a {
 img.hamburger {
   display: none;
 }
-.menuview{
+.menuview {
   display: none;
 }
 
-@media only screen and (max-width: 992px) {
+/* ============================= Footer css  ====================== */
 
+.img2 {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.col-xl-5.col-lg-5.col-md-5.col-sm-5.fb2.d-inline-block {
+  flex: 1;
+  text-align: center;
+}
+.footer_section {
+  padding: 10px 10px;
+}
+.bgclr {
+  background-color: #e1e3e1;
+}
+.footer_bottom {
+  padding: 6px;
+
+  font-family: Work Sans;
+  display: flex;
+}
+.footerimg {
+  height: 31px;
+  width: 82px;
+  left: 0px;
+  top: 0px;
+  border-radius: 0px;
+}
+.div1 {
+  flex: 1;
+  display: grid;
+}
+.div1 a,
+.div2 a,
+.div3 a {
+  color: black;
+}
+
+li.active {
+  font-weight: bold;
+  opacity: 1 !important;
+  color: black;
+  font-family: Work Sans;
+  font-size: 16px;
+  font-style: normal;
+}
+.footer_bottom li a {
+  font-family: Work Sans;
+  font-size: 14px;
+  font-style: normal;
+  opacity: 0.65;
+}
+p.form_header {
+  font-weight: bold;
+  font-size: 16px;
+  display: flex;
+}
+input.form_input {
+  border: none;
+  height: auto;
+  width: 74% !important;
+}
+/* form.footer_form {
+  flex: 1;
+  display: flex;
+  justify-content: end;
+} */
+p.footer_text {
+  margin-top: 24px;
+  font-size: 14px;
+  text-align: start;
+  max-width: 60%;
+}
+button.form_button {
+  background-color: black;
+  color: white;
+  border: none;
+}
+.cardimg img {
+  margin-left: 8px;
+  width: 40px;
+  height: 20px;
+}
+.footer_sec {
+  flex: 1 1;
+  display: block;
+  padding: 0 30px;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------- */
+@media (min-width: 992px) and (max-width: 1200px) {
+  .cardimg img {
+    width: 38px;
+    height: 20px;
+    margin-left: 4px;
+  }
+  .footer_sec {
+    flex: 1 1;
+    display: contents;
+  }
+}
+/* ---------------------------------------------------------------------------------------------------------------------------- */
+
+@media (min-width: 767px) and (max-width: 992px) {
   .girlfont,
   .boyfont,
   .everyfont,
@@ -94,111 +214,76 @@ img.hamburger {
   }
   nav.navbar a {
     display: block;
-    padding: 0 6px;
-}
-.searchlogo {
-  height: 19px;
-  width: 19px;
-  margin-top: -10px;
-  border-radius: 0px;
-}
-.cartlogo {
-  height: 24px;
-  width: 24px;
-  margin-top: -8px;
-  border-radius: 0px;
-}
-.userlogo {
-  height: 19px;
-  width: 18px;
-  border-radius: 0px;
-  margin-top: -10px;
-}
-.trylogo {
-  width: 80px;
-  left: 0px;
-  top: 6px;
-  border-radius: 36px;
-  margin-top: -3px;
-}
+    padding: 0 5px;
+  }
+  .searchlogo {
+    height: 19px;
+    width: 19px;
+    margin-top: -10px;
+    border-radius: 0px;
+  }
+  .cartlogo {
+    height: 24px;
+    width: 24px;
+    margin-top: -8px;
+    border-radius: 0px;
+  }
+  .userlogo {
+    height: 19px;
+    width: 18px;
+    border-radius: 0px;
+    margin-top: -10px;
+  }
+  .trylogo {
+    width: 80px;
+    left: 0px;
+    top: 6px;
+    border-radius: 36px;
+    margin-top: -3px;
+  }
   img.hamburger {
     display: none;
   }
-  .menuview{
+  .menuview {
     display: none;
   }
+  .cardimg img {
+    width: 28px;
+    height: 20px;
+    margin-left: 4px;
+  }
+
+  .footer_sec {
+    flex: 1 1;
+    display: contents;
+  }
+  input.form_input {
+    width: 65% !important;
+  }
+  p.form_header {
+    font-weight: bold;
+    font-size: 14px;
+    display: flex;
+  }
+  p.footer_text {
+    max-width: 95%;
+  }
 }
-@media only screen and (max-width: 767px) {
+
+@media (min-width: 567px) and (max-width: 767px) {
   .girlfont,
   .boyfont,
   .everyfont,
   .accefont,
   .trylogo {
-  display: none !important;
+    display: none !important;
   }
-.searchlogo {
-  padding: 0 10px;
+  nav.nav .searchlogo {
+    padding: 0 10px;
     height: 25px;
     width: 25px;
     margin-top: 0px;
     border-radius: 0px;
-}
-.cartlogo {
-  padding: 0 10px;
-  height: 32px;
-  width: 26px;
-  margin-top: 3px;
-  border-radius: 0px;
-}
-.userlogo {
-  padding: 0 10px;
-  height: 36px;
-  width: 22px;
-  border-radius: 0px;
-  margin-top: 0px;
-}
-img.hamburger {
-  display: flex;
-  height: 25px;
-  width: 25.75px;
-  margin: 16px 8px;
-}
-  .close {
-    height: 32px;
-    width: 30px;
-    background-color: white;
-  }
-
-  .menuview {
-    display: flex;
-    flex-direction: column;
-    background-color: black;
-    padding: 10px 10px 10px 10px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 400px !important;
-    height: 660px;
-  }
-
-  .menuview a {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 20px 0px 10px 0px;
-    color: white;
-    text-align: end;
-  }
-
-}
-@media only screen and (max-width: 567px) {
-
-
-  .searchlogo {
-    padding: 0 10px;
-      height: 25px;
-      width: 25px;
-      margin-top: 0px;
-      border-radius: 0px;
   }
   .cartlogo {
     padding: 0 10px;
@@ -220,53 +305,152 @@ img.hamburger {
     width: 25.75px;
     margin: 16px 8px;
   }
-    .close {
-      height: 32px;
-      width: 30px;
-      background-color: white;
-    }
-  
-    .menuview {
-      display: flex;
-      flex-direction: column;
-      background-color: black;
-      padding: 10px 10px 10px 10px;
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 300px !important;
-      height: 660px;
-    }
-  
-    .menuview a {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 20px 0px 10px 0px;
-      color: white;
-      text-align: end;
-    }
-  
+  .close {
+    height: 32px;
+    width: 30px;
+    background-color: white;
+  }
+  .menuview {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 10px 10px 10px 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 400px !important;
+    height: 660px;
+  }
+  .menuview a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 20px 0px 10px 0px;
+    color: white;
+    text-align: end;
+  }
+  .cardimg img {
+    width: 22px;
+    height: 20px;
+    margin-left: 2px;
+  }
+  .footer_sec {
+    flex: 1 1;
+    display: inline-block;
+    padding: 0 0px;
+  }
+  p.form_header {
+    font-weight: bold;
+    font-size: 11px;
+    display: flex;
+  }
+  input.form_input {
+    border: none;
+    height: auto;
+    width: 68% !important;
+  }
+  button.form_button {
+    background-color: black;
+    font-size: x-small;
+    height: 25px;
+    padding-top: 6px;
+    color: white;
+    border: none;
+  }
+  p.footer_text {
+    margin-top: 24px;
+    font-size: 10px;
+    text-align: start;
+    max-width: 91%;
+}
 
 }
-@media only screen and (max-width: 420px) {
 
-
+@media (min-width: 420px) and (max-width: 567px) {
+  .girlfont,
+  .boyfont,
+  .everyfont,
+  .accefont,
+  .trylogo {
+    display: none !important;
+  }
+  nav.navbar {
+    margin-right: -15px;
+  }
   .searchlogo {
-    padding: 0 0px;
-      height: 19px;
-      width: 19px;
-      margin-top: 0px;
-      border-radius: 0px;
+    padding: 0 5px;
+    height: 25px;
+    width: 25px;
+    margin-top: 0px;
+    border-radius: 0px;
   }
   .cartlogo {
-    padding: 0 0px;
+    padding: 0 5px;
+    height: 32px;
+    width: 26px;
+    margin-top: 3px;
+    border-radius: 0px;
+  }
+  .userlogo {
+    padding: 0 5px;
+    height: 36px;
+    width: 22px;
+    border-radius: 0px;
+    margin-top: 0px;
+  }
+  img.hamburger {
+    display: flex;
+    height: 27px;
+    width: 25.75px;
+    margin-right: 10px;
+    margin-top: 12px;
+  }
+  .close {
+    height: 32px;
+    width: 30px;
+    background-color: white;
+  }
+  .menuview {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 10px 10px 10px 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px !important;
+    height: 660px;
+  }
+  .menuview a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 20px 0px 10px 0px;
+    color: white;
+    text-align: end;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 420px) {
+  .girlfont,
+  .boyfont,
+  .everyfont,
+  .accefont,
+  .trylogo {
+    display: none !important;
+  }
+
+  .searchlogo {
+    height: 19px;
+    width: 19px;
+    margin-top: 0px;
+    border-radius: 0px;
+  }
+  .cartlogo {
     height: 21px;
     width: 22px;
     margin-top: 6px;
     border-radius: 0px;
   }
   .userlogo {
-    padding: 0 0px;
     height: 17px;
     width: 17px;
     border-radius: 0px;
@@ -276,151 +460,20 @@ img.hamburger {
     display: flex;
     height: 16px;
     width: 19.75px;
-    margin: 24px 0px 0 0;
-}
-    .close {
-      height: 32px;
-      width: 30px;
-      background-color: white;
-    }
-  
-    .menuview {
-      display: flex;
-      flex-direction: column;
-      background-color: black;
-      padding: 10px 10px 10px 10px;
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 175px !important;
-      height: 660px;
-    }
-  
-    .menuview a {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 20px 0px 10px 0px;
-      color: white;
-      text-align: end;
-    }
-  
-
-}
-
-/* @media only screen and (max-width: 1199px) {
-  .logoimg {
-   
-    margin: 20px 0 0 5px
-  }  
-  .headers {
-    
-    margin-top: -60px;
-   
+    margin-top: 19px;
+    margin-left: -6px;
+    margin-right: 14px;
   }
-}
-@media only screen and (max-width: 992px) {
-  .girlfont {
-    padding: 0 10px;
-    font-size: 16px;
-  }
-  .boyfont {
-    padding: 0 10px;
-    font-size: 16px;
-  }
-  .everyfont {
-    padding: 0 10px;
-    font-size: 16px;
-  }
-  .accefont {
-    padding: 0 10px;
-    font-size: 16px;
-  }
-  .searchlogo {
-    padding: 0 7px 0 10px;
-    height: 19px;
-    width: 19px;
-    margin-top: 0px;
-    border-radius: 0px;
-  }
-  .cartlogo {
-    height: 24px;
-    padding: 0 7px 0 10px;
-    width: 24px;
-    margin-top: 3px;
-    border-radius: 0px;
-  }
-  .userlogo {
-    padding: 0 10px;
-    height: 19px;
-    width: 18px;
-    border-radius: 0px;
-    margin-top: 0px;
-  }
-  .trylogo {
-    width: 80px;
-    border-radius: 36px;
-    margin-top: 0px;
-    padding: 0 45px 0 5px;
-  }
-  .bannerImg {
-    height: 494px;
-    width: 374px;
-    position: absolute;
-    left: 43%;
-    top: 16%;
-  }
-}
-
-@media only screen and (min-width: 76px) {
-  .hamburger {
-    display: none;
-  }
-  .menuview {
-    display: none;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .girlfont {
-    display: none;
-  }
-  .boyfont {
-    display: none;
-  }
-  .everyfont {
-    display: none;
-  }
-  .accefont {
-    display: none;
-  }
-  .trylogo {
-    display: none;
-  }
-
-  .searchlogo {
-    height: 24px;
-    width: 24px;
-    border-radius: 0px;
-  }
-  .cartlogo {
-    height: 25px;
-    width: 28px;
-  }
-  .userlogo {
-    height: 25px;
-    width: 20px;
-  }
-  .hamburger {
+  nav.navbar {
+    flex: 1 1;
     display: flex;
-    height: 25px;
-    width: 25.75px;
-    padding: 0px 50px 4px 5px;
+    justify-content: right;
   }
   .close {
     height: 32px;
     width: 30px;
     background-color: white;
   }
-
   .menuview {
     display: flex;
     flex-direction: column;
@@ -429,8 +482,8 @@ img.hamburger {
     position: absolute;
     top: 0;
     right: 0;
-    width: 200px;
-    height: 615px;
+    width: 175px !important;
+    height: 660px;
   }
 
   .menuview a {
@@ -439,110 +492,5 @@ img.hamburger {
     padding: 20px 0px 10px 0px;
     color: white;
     text-align: end;
-  }
-
-  
-}
-
-@media only screen and (max-width: 567px) {
- 
-  .logoimg {
-    margin: 40px 0 0 30px;
-  }
-  .searchlogo {
-    height: 19px;
-    width: 19px;
-  }
-  .cartlogo {
-    height: 22px;
-    width: 24px;
-  }
-  .userlogo {
-    height: 20px;
-    width: 17px;
-  }
-  .hamburger {
-    display: flex;
-    height: 16px;
-    width: 18.75px;
-    padding: 0px 10px 4px 5px;
-  }
-  .close {
-    height: 28px;
-    width: 28px;
-    background-color: white;
-  }
-  .menuview {
-    display: flex;
-    flex-direction: column;
-    background-color: black;
-    padding: 10px 10px 10px 10px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 170px;
-    height: 615px;
-  }
-  .menuview a {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 20px 0px 10px 0px;
-    color: white;
-    text-align: end;
-  }
-  .bannerImg {
-    height: 494px;
-    width: 374px;
-    position: absolute;
-    left: 43%;
-    top: 16%;
   }
 }
-@media only screen and (max-width: 420px) {
-  .logoimg {
-    margin: 40px 0 0 30px;
-  }
-  .searchlogo {
-    height: 17px;
-    width: 17px;
-  }
-  .cartlogo {
-    height: 20px;
-    padding: 5px 5px 5px 5px;
-    width: 22px;
-    margin-top: 0px;
-  }
-  .userlogo {
-    height: 17px;
-    width: 15px;
-  }
-  .hamburger {
-    display: flex;
-    padding-left: 3px;
-    height: 15px;
-    width: 16.75px;
-  }
-  .close {
-    height: 25px;
-    width: 25px;
-    background-color: white;
-  }
-  .menuview {
-    display: flex;
-    flex-direction: column;
-    background-color: black;
-    padding: 10px 10px 10px 10px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 150px;
-    height: 615px;
-  }
-  .menuview a {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 20px 0px 10px 0px;
-    color: white;
-    text-align: end;
-  }
-} */

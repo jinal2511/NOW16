@@ -8,7 +8,7 @@ import { useState } from "react";
   return (
     <>
     
-       <div className="headers">
+       <div className="main-container">
         
         <Link href="./Girls">
           <a className="girlfont">GIRLS</a>
